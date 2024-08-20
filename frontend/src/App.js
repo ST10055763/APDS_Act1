@@ -2,7 +2,7 @@
 import './App.css';
 import React from "react";
 // we use route in order to define the routes of our application
-import { routes, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // we import all the components we need for our app
 import Navbar from "./components/navbar";
 import PostList from "./components/postList";
@@ -13,16 +13,16 @@ import Login from "./components/login";
 
 const App = () => {
   return(
-    <div>
+    <Router>
       <Navbar />
       <Routes>
-        <Route exact path="/" element ={<PostList />} />
-        <Route exact path="/edit/:id" element ={<EditPost />} />
-        <Route exact path="/create" element ={<CreatePost />} />
-        <Route exact path="/register" element ={<Register />} />
-        <Route exact path="/login" element ={<Login />} />
+        <Route exact path="/" element={<PostList />} />
+        <Route exact path="/edit/:id" element={<EditPost />} />
+        <Route exact path="/create" element={<CreatePost />} />
+        <Route exact path="/register" element={<Register />} />
+        <Route exact path="/login" element={<Login />} />
       </Routes>
-    </div>
+    </Router>
   );
 };
 

@@ -80,7 +80,7 @@ import express from "express";
 import cors from "cors";
 // import app from "./app.mjs";
 
-const PORT = 3000;
+const PORT = 3001;
 const app = express();
 
 const options = {
