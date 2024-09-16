@@ -13,7 +13,8 @@ import Login from "./components/login";
 
 const App = () => {
   return(
-    <Router>
+    // <Router>
+    <nav>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<PostList />} />
@@ -21,8 +22,8 @@ const App = () => {
         <Route exact path="/create" element={<CreatePost />} />
         <Route exact path="/register" element={<Register />} />
         <Route exact path="/login" element={<Login />} />
-      </Routes>
-    </Router>
+      </Routes></nav>
+    // </Router>
   );
 };
 

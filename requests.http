@@ -1,0 +1,19 @@
+// this file is for the REST client
+
+GET https://localhost:3001/post
+###
+POST https://localhost:3001/post/upload
+{
+  "user": "Kiash",
+  "content": "Testing Post2",
+  "image": "https://editors.dexerto.com/wp-content/uploads/2022/12/02/all-need-for-speed-games-in-order.jpg"
+}
+###
+GET https://localhost:3001/post/66c4902951ff0a42521387f9
+###
+PATCH https://localhost:3001/post/66c4902951ff0a42521387f9
+{
+  "user": "Kiash",
+  "content": "Testing Updated",
+  "image": "https://www.legitreviews.com/wp-content/uploads/2016/02/image_53.adaptive.930.high_-645x363.jpghttps"
+}
